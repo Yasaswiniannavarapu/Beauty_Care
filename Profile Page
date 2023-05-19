@@ -1,0 +1,550 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Student Profile Page Design Example&lt;/title&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Codeconvey&quot; /&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;&lt;link
+rel=&#39;stylesheet&#39; href=&#39;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css&#39;&gt;
+&lt;link rel=&#39;stylesheet&#39; href=&#39;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css&#39;&gt;
+    &lt;!--Only for demo purpose - no need to add.--&gt;
+   
+&lt;style&gt;
+ 
+        html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: &#39;Roboto&#39;, sans-serif;
+  }
+ 
+  header{
+    position: sticky;
+    top: 0;
+    background: white;
+    height: 66px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+ 
+  .rightBox{
+      display: flex;
+      margin: 12px;
+      text-decoration: none;
+      color: white;
+    }
+ 
+  .left img{
+    width: 70px;
+    height: 40px;
+  }
+ 
+  .container{
+    padding: 0 5vw;
+  }
+  .containerHeader{
+    padding: 0 10vw;
+    background-color: #faaeb4;
+  }
+ 
+  nav{
+    font-size: 12px;
+    padding-top: 14px;
+  }
+ 
+  nav ul li{
+    list-style: none;
+    padding: 0 10px;
+  }
+ 
+  .section1{
+    background: #e5b2b6;
+  }
+ 
+  .search{
+    width: 10vw;
+      padding: 7px 17px;
+      border: 0.5px solid grey;
+      background: #fdf7fd;
+      border-radius: 5px;
+  }
+ 
+  .homeImg{
+    width: 90vw;
+    height: 20vw;
+    margin: 12px 0;
+  }
+ 
+  .itemImg{
+    width: 11vw;
+    margin: 6px 12px;
+  }
+  .container1{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+  body a{
+    text-decoration: none;
+    color: rgb(37, 35, 35);
+  }
+  .container1 a{
+    text-decoration: none;
+    color: white;
+}
+.account-page{
+  padding: 50px;
+  background-color: rgba(116, 75, 253, 0.15);
+}
+.flex{
+    display:flex;
+    text-decoration: none;
+  }
+ 
+  .items-center{
+    align-items:right;
+  }
+ 
+  .justify-center{
+    justify-content: center;
+  }
+ 
+  .space-between{
+    justify-content: space-between;
+  }
+ 
+  .uppercase{
+    text-transform: uppercase;
+  }
+ 
+  .semibold{
+    font-weight: bolder;
+  }
+ 
+  .mx-2{
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+ 
+  .my-2{
+    margin: 12px 0;
+  }
+ 
+  .flex-wrap{
+    flex-wrap: wrap;
+  }
+  .container1{
+    max-width: 1170px;
+    margin: auto;
+}
+   
+   @import url(&#39;https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&#39;);
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+article, header, section, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+body {
+    color: #222;
+    font-size: 100%;
+    line-height: 24px;
+    margin: 0;
+    padding:0;
+    font-family: &quot;Raleway&quot;,sans-serif;
+}
+a{
+    font-family: &quot;Raleway&quot;,sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+a:hover, a:focus {
+    color: #373e18;
+}
+section {
+    float: left;
+    width: 100%;
+    padding-bottom:3em;
+}
+h2 {
+    color: #1a0e0e;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    text-transform:uppercase;
+}
+h2 span {
+    display: block;
+    padding: 0;
+    font-size: 18px;
+    opacity: 0.7;
+    margin-top: 5px;
+    text-transform:uppercase;
+}
+#float-right{
+    float:right;    
+}
+/* ******************************************************
+    Script Top
+*********************************************************/
+.ScriptTop {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    font-size: 0.69em;
+    font-weight: 600;
+    line-height: 2.2;
+    padding: 12px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+/* To Navigation Style 1*/
+.ScriptTop ul {
+    margin: 24px 0;
+    padding: 0;
+    text-align: left;
+}
+.ScriptTop li{
+    list-style:none;    
+    display:inline-block;
+}
+.ScriptTop li a {
+    background: #6a4aed none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.ScriptTop li a:hover{
+    background:#000;
+    color:#fff;
+}
+/* ******************************************************
+    Script Header
+*********************************************************/
+.ScriptHeader {
+    float: left;
+    width: 100%;
+    padding: 2em 0;
+}
+.rt-heading {
+    margin: 0 auto;
+    text-align:center;
+}
+.Scriptcontent{
+    line-height:28px;  
+}
+.ScriptHeader h1{
+    font-family: &quot;brandon-grotesque&quot;, &quot;Brandon Grotesque&quot;, &quot;Source Sans Pro&quot;, &quot;Segoe UI&quot;, Frutiger, &quot;Frutiger Linotype&quot;,
+&quot;Dejavu Sans&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+    color: #080808;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+}
+.ScriptHeader h2 {
+    color: #312c8f;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0 0;
+    line-height: normal;
+
+B-CARE
+
+40 Department of CSSE
+}
+.ScriptHeader h1 span {
+    display: block;
+    padding: 0;
+    font-size: 22px;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+.ScriptHeader span {
+    display: block;
+    padding: 0;
+    font-size: 22px;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+/* ******************************************************
+    Live Demo
+*********************************************************/
+
+/* ******************************************************
+    Responsive Grids
+*********************************************************/
+.rt-container {
+    margin: 0 auto;
+    padding-left:12px;
+    padding-right:12px;
+}
+.rt-row:before, .rt-row:after {
+  display: table;
+  line-height: 0;
+  content: &quot;&quot;;
+}
+.rt-row:after {
+  clear: both;
+}
+[class^=&quot;col-rt-&quot;] {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 15px;
+  min-height: 1px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .rt-container {
+    width: 750px;
+  }
+  [class^=&quot;col-rt-&quot;] {
+    float: left;
+    width: 49.9999999999%;
+  }
+  .col-rt-6, .col-rt-12 {
+    width: 100%;
+  }
+ 
+}
+@media (min-width: 1200px) {
+    .rt-container {
+        width: 1170px;
+    }
+    .col-rt-1 {
+        width:16.6%;
+    }
+    .col-rt-2 {
+        width:30.33%;
+    }
+    .col-rt-3 {
+        width:50%;
+    }
+    .col-rt-4 {
+        width: 67.664%;
+    }
+    .col-rt-5 {
+        width: 83.33%;
+    }
+   
+}
+@media only screen and (min-width:240px) and (max-width: 768px){
+     .ScriptTop h1, .ScriptTop ul {
+        text-align: center;
+    }
+    .ScriptTop h1{
+        margin-top:0;
+        margin-bottom:15px;
+    }
+    .ScriptTop ul{
+         margin-top:12px;      
+    }
+   
+    .ScriptHeader h1,
+    .ScriptHeader h2,
+    .scriptnav ul{
+        text-align:center;  
+    }
+    .scriptnav ul{
+         margin-top:12px;      
+    }
+    #float-right{
+        float:none;
+    }
+   
+}
+body {
+  background: #feadad;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#ffb1b1, #fc6348);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffb1b1, #fc6348); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+,
+Safari 7+ */
+  padding: 0;
+  margin: 0;
+  font-family: &#39;Lato&#39;, sans-serif;
+  color: #000;
+}
+.student-profile .card {
+  border-radius: 10px;
+}
+.student-profile .card .card-header .profile_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px auto;
+  border: 10px solid #ccc;
+  border-radius: 50%;
+}
+.student-profile .card h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.student-profile .card p {
+  font-size: 16px;
+  color: #000;
+}
+.student-profile .table th,
+.student-profile .table td {
+  font-size: 14px;
+  padding: 5px 10px;
+  color: #000;
+}
+header .containerHeader{
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+.edit{
+  background-image: linear-gradient(to right,rgb(86, 70, 146), rgb(8, 4, 34));
+  border-radius: 30px;
+  box-shadow: rgb(113, 82, 238);
+  border: #5d48fc;
+  float: right;
+  color:rgb(251, 248, 248);
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 16px;
+}
+&lt;/style&gt;
+&lt;header class=&quot;containerHeader&quot;&gt;
+  &lt;nav class=&quot;flex space-between&quot;&gt;
+    &lt;div class=&quot;left flex items-center&quot;&gt;
+      &lt;img src=&quot;logo.png&quot; usemap=&quot;#workmap&quot;&gt;
+      &lt;map name=&quot;workmap&quot;&gt;
+          &lt;area shape=&quot;rect&quot; coords=&quot;2,0,865,988&quot; href=&quot;homepage.html&quot;&gt;
+         
+        &lt;/map&gt;
+      &lt;ul class=&quot;flex items-center justify-center uppercase semibold&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;homepage.html&quot;&gt;Home&lt;/a&gt; &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;makeup.html&quot; &gt;MakeUp&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;skin_project.html&quot;&gt;Skin&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;hair_project.html&quot;&gt;Hair&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;bathandbody.html&quot; &gt;Bath&amp;body&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;momandbaby.html&quot;&gt;Mom&amp;baby&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;perfumes_project.html&quot; &gt;Perfumes&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;ayurvedic.html&quot;&gt;Ayurvedic&lt;/a&gt;&lt;/li&gt;
+       
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;right flex items-center&quot;&gt;
+      &lt;input class=&quot;search&quot; placeholder=&quot;Search for products, brands and more&quot; class=&quot;desktop-searchBar&quot; value=&quot;&quot; &gt;
+      &lt;div class=&quot;rightBox&quot;&gt;
+      &lt;div class=&quot;profile mx-2&quot;&gt;&lt;a href=&quot;profile_page.html&quot; style=&quot;color:white&quot;&gt;Profile&lt;/a&gt;&lt;/div&gt;
+     
+      &lt;div class=&quot;bag mx-2&quot;&gt;&lt;a href=&quot;shoppingcartpage.html&quot;&gt;Bag&lt;/a&gt;&lt;/div&gt;
+      &lt;div class=&quot;login mx-2&quot;&gt;&lt;a href=&quot;loginpagefinal.html&quot;&gt;Login&lt;/a&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+&lt;/head&gt;
+&lt;body&gt;
+       
+&lt;h2 style=&quot;text-align: center; color:#000; padding-bottom: 3%; padding-top: 2%;&quot;&gt;My Profile&lt;/h2&gt;
+&lt;section&gt;
+    &lt;div class=&quot;rt-container&quot;&gt;
+          &lt;div class=&quot;col-rt-12&quot;&gt;
+              &lt;div class=&quot;Scriptcontent&quot;&gt;
+             
+&lt;!-- Student Profile --&gt;
+&lt;div class=&quot;student-profile py-4&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card shadow-sm&quot; padding=&quot;3%&quot;&gt;
+          &lt;div class=&quot;card-header bg-transparent text-center&quot;&gt;
+            &lt;img class=&quot;profile_img&quot; src=&quot;https://source.unsplash.com/600x300/?student&quot; alt=&quot;student dp&quot;&gt;
+            &lt;h3&gt;Anushka Shetty&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;&lt;strong class=&quot;pr-1&quot;&gt;Student ID:&lt;/strong&gt;321000001&lt;/p&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;&lt;strong class=&quot;pr-1&quot;&gt;Mail Id&lt;br&gt;&lt;/strong&gt;20121A29XX@vidyanikethan.asia&lt;/p&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;&lt;strong class=&quot;pr-1&quot;&gt;Mobile Number&lt;/strong&gt;57664676567&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;button class=&quot;edit&quot;&gt;&lt;a href=&quot;registrationproject.html&quot; target=&quot;_self&quot; style=&quot;text-decoration:none ;color: white;&quot;
+&gt;Edit&lt;/a&gt;&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-lg-8&quot;&gt;
+        &lt;div class=&quot;card shadow-sm&quot;&gt;
+          &lt;div class=&quot;card-header bg-transparent border-0&quot;&gt;
+            &lt;h3 class=&quot;mb-0&quot;&gt;&lt;i class=&quot;far fa-clone pr-1&quot;&gt;&lt;/i&gt;General Information&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;card-body pt-0&quot;&gt;
+            &lt;form&gt;
+            &lt;table class=&quot;table table-bordered&quot;&gt;
+              &lt;tr&gt;
+                &lt;th width=&quot;30%&quot;&gt;First Name&lt;/th&gt;
+                &lt;td width=&quot;2%&quot;&gt;:&lt;/td&gt;
+                &lt;td &gt;&lt;input type=&quot;text&quot; value=&quot;Anushka&quot; style=&quot;border:0px ;&quot; &gt; &lt;/td&gt;
+              &lt;/tr&gt;
+             
+              &lt;tr&gt;
+                &lt;th width=&quot;30%&quot;&gt;Last Name&lt;/th&gt;
+                &lt;td width=&quot;2%&quot;&gt;:&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&quot;text&quot; value=&quot;Shetty&quot; style=&quot;border:0px ;&quot; &gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;th width=&quot;30%&quot;&gt;Mobile Number   &lt;/th&gt;
+                &lt;td width=&quot;2%&quot;&gt;:&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&quot;text&quot; value=&quot;57664676567&quot; style=&quot;border:0px ;&quot; &gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;th width=&quot;30%&quot;&gt;Country&lt;/th&gt;
+                &lt;td width=&quot;2%&quot;&gt;:&lt;/td&gt;
+                &lt;td&gt;&lt;input type=&quot;text&quot; value=&quot;India&quot; style=&quot;border:0px ;&quot; &gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;th width=&quot;30%&quot;&gt;Email-Id&lt;/th&gt;
+                &lt;td width=&quot;2%&quot;&gt;:&lt;/td&gt;
+                &lt;td &gt;20121A29XX@vidyanikethan.asia&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+          &lt;div style=&quot;height: 26px&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;card shadow-sm&quot;&gt;
+          &lt;div class=&quot;card-header bg-transparent border-0&quot;&gt;
+            &lt;h3 class=&quot;mb-0&quot;&gt;&lt;i class=&quot;far fa-clone pr-1&quot;&gt;&lt;/i&gt;Other Information&lt;/h3&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;card-body pt-0&quot;&gt;
+              &lt;p&gt;Beyond physical health, cosmetics can help to improve our mood, enhance our appearance and boost our self-
+esteem. They can also help to exhibit personal style and, as such, are an important means of social expression.&lt;b&gt;B-
+Care&lt;/b&gt; helps you to boost your self-esteem.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- partial --&gt;
+           
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+     
+    &lt;!-- Analytics --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
