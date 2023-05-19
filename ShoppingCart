@@ -1,0 +1,389 @@
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;Shopping Cart&lt;/title&gt;&lt;/head&gt;
+&lt;style&gt;
+html {
+background: #eceaea;
+font: 62.5%/1.5em &quot;Trebuchet Ms&quot;, helvetica;
+margin-left: 20px;
+}
+* {
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
+}
+@font-face {
+font-family:sans-serif;
+src: url(&#39;http://www.shopperfont.com/font/Shopper-Std.ttf&#39;);
+}
+.shopper {
+font: 2em &#39;Shopper&#39;, sans-serif;
+line-height: 0.5em;
+display: inline-block;
+}
+
+h1 {
+text-transform: uppercase;
+font-weight: bold;
+font-size: 2.5em;
+}
+p {
+font-size: 1.5em;
+color: #2d2c2c;
+}
+input {
+border: 0.1em solid #0d0d0d;
+padding: 0.5em 0.3em;
+font-size: 1.4em;
+color: #060505;
+text-align: center;
+}
+img {
+max-width: 9em;
+width: 100%;
+overflow: hidden;
+margin-right: 1em;
+}
+a {
+text-decoration: none;
+}
+.container {
+max-width: 75em;
+width: 100%;
+margin: 40px auto;
+overflow: hidden;
+position: relative;
+border-radius: 0.4em;
+background: #f7f5f7;
+box-shadow: 0 0.5em 0 rgba(150, 98, 144, 0.2);
+}
+.heading {
+padding: 1em;
+position: relative;
+z-index: 1;
+color: #262525;
+background: #fa9ea6;
+}
+.cart {
+margin: 2.5em;
+overflow: hidden;
+}
+.cart.is-closed {
+height: 0;
+margin-top: -2.5em;
+}
+.table {
+background: #ffffff;
+border-radius: 0.6em;
+overflow: hidden;
+clear: both;
+margin-bottom: 1.8em;
+}
+.layout-inline &gt; * {
+display: inline-block;
+}
+.align-center {
+text-align: center;
+}
+.th {
+background: #fa9ea6;
+color: rgb(52, 51, 51);
+text-transform: uppercase;
+font-weight: bold;
+font-size: 1.5em;
+}
+.tf {
+background: #fa9ea6;
+text-transform: uppercase;
+text-align: right;
+font-size: 0.8em;
+text-size-adjust: auto;
+}
+.tf p {
+color: rgb(41, 41, 41);
+font-weight: bold;
+font-size: 1.5em;
+}
+.col {
+padding: 1em;
+width: 12%;
+}
+.col-pro {
+width: 44%;
+}
+.col-pro &gt; * {
+vertical-align: middle;
+}
+.col-qty {
+text-align: center;
+width: 17%;
+}
+.col-numeric p {
+font: bold 1.8em helvetica;
+}
+.col-total p {
+color: #170565;
+}
+.tf .col {
+width: auto;
+color: #170565;
+font: bold 1.8em helvetica;
+}
+.row &gt; div {
+vertical-align: middle;
+}
+.row-bg2 {
+background: #f7f7f7;
+}
+.visibility-cart {
+position: absolute;
+color: rgb(31, 30, 30);
+top: 0.5em;
+right: 0.5em;
+font: bold 2em arial;
+border: 0.16em solid rgb(45, 44, 44);
+border-radius: 2.5em;
+padding: 0 0.22em 0 0.25em ;
+}
+.col-qty &gt; * {
+vertical-align: middle;
+}
+.col-qty &gt; input {
+max-width: 2.6em;
+}
+a.qty {
+width: 1em;
+line-height: 1em;
+border-radius: 2em;
+font-size: 2.5em;
+font-weight: bold;
+text-align: center;
+background: #5043e3;
+color: rgb(244, 242, 242);
+}
+a.qty:hover {
+background: #593bc6;
+}
+.btn {
+padding: 10px 30px;
+border-radius: 0.3em;
+font-size: 1.4em;
+font-weight: bold;
+background: #5e43e3;
+color: #fff;
+box-shadow: 0 3px 0 rgb(89, 59, 198)
+}
+.btn:hover {
+box-shadow: 0 3px 0 rgba(59,154,198, 0)
+}
+.btn-update {
+float: right;
+margin: 0 0 1.5em 0;
+}
+.transition {
+transition: all 0.3s ease-in-out;
+}
+@media screen and ( max-width: 755px) {
+.container {
+width: 98%;
+}
+.col-pro {
+width: 35%;
+}
+.col-qty {
+width: 22%;
+}
+img {
+max-width: 100%;
+margin-bottom: 1em;
+}
+}
+@media screen and ( max-width: 591px) {
+}
+&lt;/style&gt;
+&lt;body&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;heading&quot;&gt;
+&lt;h1&gt;
+&lt;span class=&quot;shopper&quot;&gt;B-Care&lt;/span&gt; Shopping Cart
+&lt;/h1&gt;
+&lt;a href=&quot;homepage.html&quot; class=&quot;visibility-cart transition is-open&quot;&gt;X&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cart transition is-open&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-update&quot;&gt;Update cart&lt;/a&gt;
+&lt;div class=&quot;table&quot;&gt;
+&lt;div class=&quot;layout-inline row th&quot;&gt;
+&lt;div class=&quot;col col-pro&quot;&gt;Product&lt;/div&gt;
+&lt;div class=&quot;col col-price align-center &quot;&gt;
+Price
+&lt;/div&gt;
+&lt;div class=&quot;col col-qty align-center&quot;&gt;QTY&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;VAT&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;Total&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;layout-inline row&quot;&gt;
+&lt;div class=&quot;col col-pro layout-inline&quot;&gt;
+&lt;p&gt;Cetaphil Facial Moisturizer&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-price col-numeric align-center &quot;&gt;
+&lt;p&gt;$59.99&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-qty layout-inline&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;qty qty-minus&quot;&gt;-&lt;/a&gt;
+&lt;input type=&quot;numeric&quot; value=&quot;3&quot; /&gt;
+&lt;a href=&quot;#&quot; class=&quot;qty qty-plus&quot;&gt;+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-vat col-numeric&quot;&gt;
+&lt;p&gt;$2.95&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-total col-numeric&quot;&gt; &lt;p&gt; $182.95&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;layout-inline row row-bg2&quot;&gt;
+&lt;div class=&quot;col col-pro layout-inline&quot;&gt;
+&lt;img src=&quot; &quot; alt=&quot;kitten&quot; /&gt;
+&lt;p&gt;Chance Channel&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-price col-numeric align-center &quot;&gt;
+&lt;p&gt;$23.99&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-qty layout-inline&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;qty qty-minus &quot;&gt;-&lt;/a&gt;
+&lt;input type=&quot;numeric&quot; value=&quot;1&quot; /&gt;
+&lt;a href=&quot;#&quot; class=&quot;qty qty-plus&quot;&gt;+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-vat col-numeric&quot;&gt;
+&lt;p&gt;$1.95&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-total col-numeric&quot;&gt;
+&lt;p&gt;$25.94&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;layout-inline row&quot;&gt;
+&lt;div class=&quot;col col-pro layout-inline&quot;&gt;
+&lt;img src=&quot; &quot; alt=&quot;kitten&quot; /&gt;
+&lt;p&gt;Himalaya Neem Face Wash&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-price col-numeric align-center &quot;&gt;
+&lt;p&gt;$59.99&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-qty layout-inline&quot;&gt;
+&lt;a href=&quot;#&quot; class=&quot;qty qty-minus&quot;&gt;-&lt;/a&gt;
+&lt;input type=&quot;numeric&quot; value=&quot;3&quot; /&gt;
+&lt;a href=&quot;#&quot; class=&quot;qty qty-plus&quot;&gt;+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-vat col-numeric&quot;&gt;
+&lt;p&gt;$2.95&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col col-total col-numeric&quot;&gt;
+&lt;p&gt;$182.95&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;tf&quot;&gt;
+&lt;div class=&quot;row layout-inline&quot;&gt;
+&lt;div class=&quot;col&quot;&gt;
+&lt;p&gt;VAT&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;$20.5&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row layout-inline&quot;&gt;
+&lt;div class=&quot;col&quot;&gt;
+&lt;p&gt;Shipping&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;$65.5&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row layout-inline&quot;&gt;
+&lt;div class=&quot;col&quot;&gt;
+&lt;p&gt;Total&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;$70.6&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-update&quot;&gt;Checkout&lt;/a&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;script&gt;
+$(&#39;.visibility-cart&#39;).on(&#39;click&#39;,function(){
+var $btn = $(this);
+var $cart = $(&#39;.cart&#39;);
+console.log($btn);
+if ($btn.hasClass(&#39;is-open&#39;)) {
+$btn.removeClass(&#39;is-open&#39;);
+$btn.text(&#39;O&#39;)
+
+B-CARE
+
+52 Department of CSSE
+$cart.removeClass(&#39;is-open&#39;);
+$cart.addClass(&#39;is-closed&#39;);
+$btn.addClass(&#39;is-closed&#39;);
+} else {
+$btn.addClass(&#39;is-open&#39;);
+$btn.text(&#39;X&#39;)
+$cart.addClass(&#39;is-open&#39;);
+$cart.removeClass(&#39;is-closed&#39;);
+$btn.removeClass(&#39;is-closed&#39;);
+}
+});
+// SHOPPING CART PLUS OR MINUS
+$(&#39;a.qty-minus&#39;).on(&#39;click&#39;, function(e) {
+e.preventDefault();
+var $this = $(this);
+var $input = $this.closest(&#39;div&#39;).find(&#39;input&#39;);
+var value = parseInt($input.val());
+if (value &gt; 1) {
+value = value - 1;
+} else {
+value = 0;
+}
+$input.val(value);
+});
+$(&#39;a.qty-plus&#39;).on(&#39;click&#39;, function(e) {
+e.preventDefault();
+var $this = $(this);
+var $input = $this.closest(&#39;div&#39;).find(&#39;input&#39;);
+var value = parseInt($input.val());
+if (value &lt; 100) {
+value = value + 1;
+} else {
+value =100;
+}
+$input.val(value);
+});
+// RESTRICT INPUTS TO NUMBERS ONLY WITH A MIN OF 0 AND A MAX 100
+$(&#39;input&#39;).on(&#39;blur&#39;, function(){
+var input = $(this);
+var value = parseInt($(this).val());
+if (value &lt; 0 || isNaN(value)) {
+input.val(0);
+} else if
+(value &gt; 100) {
+input.val(100);
+}
+});
+&lt;/script&gt;
+&lt;/html&gt;
+Php code for login page:
+&lt;?php
+    if($_SERVER[&#39;REQUEST_METHOD&#39;]==&#39;POST&#39; &amp;&amp; isset($_POST[&#39;submit&#39;]))
+    {
+        $conn = mysqli_connect(&#39;localhost&#39;,&#39;root&#39;,&#39;&#39;,&#39;miniproject&#39;) or die(&quot;Connection Failed&quot;);
+        if(isset($_POST[&#39;user&#39;]) &amp;&amp; isset($_POST[&#39;pswd&#39;]))
+        {
+            $user = $_POST[&#39;user&#39;];
+            $pswd = $_POST[&#39;pswd&#39;];
+           
+            $sql = &quot;INSERT INTO `logintable` (`user`, `pswd`)  VALUES (&#39;$user&#39;,&#39;$pswd&#39;)&quot;;
+         
+            if(mysqli_query($conn,$sql))
+            {
+                header(&quot;Location:http://localhost/programs/homepage.html&quot;);
+            }
+            else
+            {
+                echo &quot;Error Occured&quot;;
+            }
+        }
+    }
+?&gt;
