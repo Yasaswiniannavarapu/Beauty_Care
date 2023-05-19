@@ -1,0 +1,220 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;Login Page&lt;/title&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css?family=Open+Sans&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;
+integrity=&quot;sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN&quot;
+crossorigin=&quot;anonymous&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;./style.css&quot;&gt;
+&lt;style&gt;
+body {
+  background-image: linear-gradient(135deg, #fecdd1 10%, #ff7c7c 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: &quot;Open Sans&quot;, sans-serif;
+  color: #333333;
+  padding-top: 3%;
+}
+.box-form {
+  margin: 0 auto;
+  width: 80%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 0 0 20px 6px #090b6f85;
+ 
+}
+@media (max-width: 980px) {
+  .box-form {
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+.box-form div {
+  height: auto;
+}
+.box-form .left {
+  color: #FFFFFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(&quot;back.png&quot;);
+  overflow: hidden;
+}
+.box-form .left .overlay {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background: #fa7e86ad;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.box-form .left .overlay h1 {
+
+B-CARE
+
+26 Department of CSSE
+  font-size: 8vmax;
+  line-height: 1;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.box-form .left .overlay span p {
+  margin-top: 30px;
+  font-weight: 900;
+}
+.box-form .left .overlay span a {
+  background: #3b5998;
+  color: #FFFFFF;
+  margin-top: 10px;
+  padding: 14px 50px;
+  border-radius: 100px;
+  display: inline-block;
+  box-shadow: 0 3px 6px 1px #042d4657;
+}
+.box-form .left .overlay span a:last-child {
+  background: #1dcaff;
+  margin-left: 30px;
+}
+.box-form .right {
+  padding: 40px;
+  overflow: hidden;
+  margin-right: 5%;
+}
+@media (max-width: 980px) {
+  .box-form .right {
+    width: 100%;
+  }
+}
+.box-form .right h5 {
+  font-size: 6vmax;
+  line-height: 0;
+}
+.box-form .right p {
+  font-size: 14px;
+  color: #8f9093;
+ 
+}
+.box-form .right .inputs {
+  overflow: hidden;
+}
+.box-form .right input {
+  width: 93%;
+  padding: 5px;
+  margin-top: 25px;
+  font-size: 16px;
+ border: 1.5px solid black;
+ 
+ 
+}
+.box-form .right .remember-me--forget-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-form .right .remember-me--forget-password input {
+  margin: 0;
+  margin-right: 7px;
+  width: auto;
+}
+.box-form .right button {
+  float: right;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 35px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 4px 20px 0px #4828c6a6;
+  background-image: linear-gradient(135deg, #7270f5 10%, #4228c6 100%);
+}
+label {
+  display: block;
+  position: relative;
+  margin-left: 30px;
+}
+label::before {
+  content: &#39; \f00c&#39;;
+  position: absolute;
+  font-family: FontAwesome;
+  background: transparent;
+  border: 3px solid #3120e9;
+  border-radius: 4px;
+  color: transparent;
+  left: -30px;
+  transition: all 0.2s linear;
+}
+label:hover::before {
+  font-family: FontAwesome;
+  content: &#39; \f00c&#39;;
+  color: #fff;
+  cursor: pointer;
+  background: #3120e9;
+}
+label:hover::before .text-checkbox {
+  background: #70F570;
+}
+label span.text-checkbox {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+label input[type=&quot;checkbox&quot;] {
+  display: none;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;box-form&quot;&gt;
+&lt;div class=&quot;left&quot;&gt;
+&lt;div class=&quot;overlay&quot;&gt;
+&lt;h1&gt;Hello &lt;br&gt;B-Care&lt;br&gt; Family&lt;/h1&gt;
+&lt;p&gt;Beauty is about enhancing what you have.&lt;br&gt; Let yourself shine through.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;right&quot;&gt;
+&lt;h5&gt;Registration&lt;/h5&gt;
+&lt;form method=&quot;POST&quot; action=&quot;register.php&quot;&gt;
+&lt;div class=&quot;inputs&quot;&gt;
+&lt;input type=&quot;text&quot; placeholder=&quot;user name&quot; name=&quot;username&quot; size=&quot;20&quot;&gt;
+&lt;br&gt;
+&lt;input type=&quot;password&quot; placeholder=&quot;password&quot; name=&quot;password&quot; size=&quot;20&quot;&gt;
+&lt;br&gt;
+&lt;input type=&quot;password&quot; placeholder=&quot;Re-enter Password&quot; name=&quot;repassword&quot; size=&quot;20&quot;&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;div class=&quot;remember-me--forget-password&quot;&gt;
+&lt;label&gt;
+&lt;input type=&quot;checkbox&quot; name=&quot;item&quot; checked=&quot;&quot;&gt;
+&lt;span class=&quot;text-checkbox&quot;&gt;Remember me&lt;/span&gt;
+&lt;/label&gt;
+&lt;p&gt;forget password?&lt;/p&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;button name=&quot;register&quot; onclick=&quot;register()&quot;&gt;Register&lt;/a&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; async=&quot;&quot; src=&quot;https://www.google-analytics.com/analytics.js&quot;&gt;&lt;/script&gt;&lt;script async=&quot;&quot;
+src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-80520768-2&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag(&#39;js&#39;, new Date());
+  gtag(&#39;config&#39;, &#39;UA-80520768-2&#39;);
+  function register()
+  {alert(&quot;registered successfully&quot;);}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
