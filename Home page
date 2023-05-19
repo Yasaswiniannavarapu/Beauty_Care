@@ -1,0 +1,302 @@
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
+&lt;title&gt;Bcare&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css&quot;&gt;
+&lt;style&gt; html, body {
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+font-family: &#39;Roboto&#39;, sans-serif;
+}
+header{
+position: sticky;
+top: 0;
+background: white;
+height: 66px;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.rightBox{
+display: flex;
+margin: 12px;
+text-decoration: none;
+color: white;
+}
+.left img{
+width: 70px;
+height: 40px;
+}
+.container{
+padding: 0 5vw;
+}
+.containerHeader{
+padding: 0 10vw;
+background-color: #faaeb4;
+
+B-CARE
+
+15 Department of CSSE
+}
+nav{
+font-size: 12px;
+padding-top: 14px;
+}
+nav ul li{
+list-style: none;
+padding: 0 10px;
+}
+.section1{
+background: #f4f1f1;
+}
+.search{
+width: 10vw;
+padding: 7px 17px;
+border: 0.5px solid grey;
+background: #fdf7fd;
+border-radius: 5px;
+}
+.homeImg{
+width: 90vw;
+height: 25vw;
+margin: 14px 0;
+}
+.itemImg{
+width: 11vw;
+margin: 6px 12px;
+}
+
+body a{
+text-decoration: none;
+color: rgb(37, 35, 35);
+}
+.footer{
+background-color:#2e2d2d;
+margin:0;
+padding: 0;
+box-sizing: border-box;
+color: rgb(247, 238, 238);
+}
+.container1{
+max-width: 1170px;
+margin: auto;
+}
+.row{
+
+B-CARE
+
+16 Department of CSSE
+display: flex;
+flex-wrap: wrap;
+}
+.footer-col{
+width: 25%;
+}
+.container1 a{
+text-decoration: none;
+color: white;
+}
+.account-page{
+padding: 50px;
+background-color: rgba(116, 75, 253, 0.15);
+}
+.flex{
+display:flex;
+}
+.items-center{
+align-items:right;
+}
+.justify-center{
+justify-content: center;
+}
+.space-between{
+justify-content: space-between;
+}
+.uppercase{
+text-transform: uppercase;
+}
+.semibold{
+font-weight: bolder;
+}
+.mx-2{
+margin-left: 12px;
+margin-right: 12px;
+}
+.my-2{
+margin: 12px 0;
+}
+.flex-wrap{
+flex-wrap: wrap;
+}
+body{
+background-color: #f7cbcb;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header class=&quot;containerHeader&quot;&gt;
+&lt;nav class=&quot;flex space-between&quot;&gt;
+&lt;div class=&quot;left flex items-center&quot;&gt;
+&lt;img src=&quot;back.png&quot; usemap=&quot;#workmap&quot;&gt;
+&lt;map name=&quot;workmap&quot;&gt;
+&lt;area shape=&quot;rect&quot; coords=&quot;2,0,865,988&quot; href=&quot;homepage.html&quot;&gt;
+&lt;/map&gt;
+&lt;ul class=&quot;flex items-center justify-center uppercase semibold&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;homepage.html&quot; style=&quot;color:white&quot;&gt;Home&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;makeup.html&quot;&gt;MakeUp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;skin_project.html&quot;&gt;Skin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;hair_project.html&quot;&gt;Hair&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;bathandbody.html&quot; &gt;Bath&amp;body&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;momandbaby.html&quot; &gt;Mom&amp;baby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;perfumes_project.html&quot; &gt;Perfumes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;ayurvedic.html&quot;&gt;Ayurvedic&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;right flex items-center&quot;&gt;
+&lt;input class=&quot;search&quot; placeholder=&quot;Search for products, brands and more&quot; class=&quot;desktop-searchBar&quot; value=&quot;&quot; &gt;
+&lt;div class=&quot;rightBox&quot;&gt;
+&lt;div class=&quot;profile mx-2&quot;&gt;&lt;a href=&quot;profile_page.html&quot;&gt;&lt;i class=&quot;fa fa-address-card&quot;&gt;&lt;/i&gt;&amp;nbsp;Profile&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;bag mx-2&quot;&gt;&lt;a href=&quot;shoppingcartpage.html&quot;&gt;&lt;i class=&quot;fa fa-shopping-bag&quot;&gt;
+&lt;/i&gt;&amp;nbsp;Bag&lt;/a&gt;&lt;/div&gt;
+&lt;div class=&quot;login mx-2&quot;&gt;&lt;a href=&quot;loginpagefinal.html&quot;&gt;Login&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/nav&gt;
+&lt;/header&gt;
+&lt;section class=&quot;container section1&quot;&gt;
+&lt;img class=&quot;homeImg&quot; src=&quot;cosmeticsimage.png&quot;/&gt;
+&lt;img class=&quot;homeImg&quot; src=&quot;https://images-static.nykaa.com/uploads/0ea19b3d-1798-4b76-992a-
+b2df8e281e10.jpg?tr=w-1200,cm-pad_resize&quot;/&gt;
+&lt;/section&gt;
+&lt;br&gt;
+&lt;section class=&quot;container section1 flex flex-wrap&quot;&gt;
+&lt;h3 style=&quot;font-family:Lucida Handwriting ;text-align: center;&quot;&gt;&lt;br&gt;&lt;br&gt;Top MakeUp&lt;br&gt; brands for&lt;br&gt; you&lt;/h3&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#homemap&quot; src=&quot;https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcTb_0pZacQD-Kvc5WDoblgXMfV7QRDme3xn3Gf2AsP5omw-
+05BQ7uNXLZRtNaSH_2_mVoY&amp;usqp=CAU&quot;/&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#homemap&quot; src=&quot;https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcQQvxD5AdVeCdZ5LAzwAomGoYUb5V3FC7SoHUDHOKT0MaRSMnGDDw
+dpszPMamoZdLaDIQE&amp;usqp=CAU&quot;/&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#homemap&quot; src=&quot;https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcSmZ6mznA2iKDrtwpuAl85BTBOsIt2o6PaEEA&amp;usqp=CAU&quot;/&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#homemap&quot; src=&quot;https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcT1zHnZ2Z_PiGKZuyvr_EN1RwFihflR_9UCOg&amp;usqp=CAUhttps://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcT1zHnZ2Z_PiGKZuyvr_EN1RwFihflR_9UCOg&amp;usqp=CAU&quot;/&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#homemap&quot; src=&quot;https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcS3bguJl7pQLBnS57j-wHN5t7bzWqIHvPVImg&amp;usqp=CAU&quot;/&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#homemap&quot; src=&quot;https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcTtN1AaFFwYeJtHusuH2S2eUe8H3P9fmloW2uwEenEAGe9orngg9MJeXFyoU
+v_iwheyq8c&amp;usqp=CAU&quot;&gt;
+&lt;map name=&quot;homemap&quot;&gt;
+&lt;area shape=&quot;rect&quot; coords=&quot;1,0,294,164&quot; href=&quot;makeup.html&quot;&gt;
+&lt;/map&gt;
+&lt;/section&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;section class=&quot;container section1 flex flex-wrap&quot;&gt;
+&lt;h3 style=&quot;font-family:Lucida Handwriting ; text-align:center;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;Moisturizer&lt;br&gt;needs for your&lt;br&gt; dry
+skin&lt;/h3&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#home2map&quot; src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh8-
+ZUZgs9QCQVp2YWTMeboz6nsJmfBw3Gug&amp;usqp=CAU&quot;&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#home2map&quot; src=&quot;https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcTvD2x9SkIzZt68Df4lLslS4wTMe0TPUtqDfA&amp;usqp=CAU&quot;&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#home2map&quot; src=&quot;https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcRBYMJtURTRROEPWcAv0P7eIf0LUFA4rbnI1A&amp;usqp=CAU&quot;&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#home2map&quot; src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-
+YYdcknT5JZDWJXtIghVLNnIkKMYufOkXwA&amp;usqp=CAU&quot;&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#home2map&quot; src=&quot;https://encrypted-
+tbn0.gstatic.com/images?q=tbn:ANd9GcT0RrogbdGzIRB5_IWhka0swNJJ-wagTjRWWg&amp;usqp=CAU&quot;&gt;
+&lt;img class=&quot;itemImg&quot; usemap=&quot;#home2map&quot; src=&quot;product.jpg &quot;&gt;
+&lt;map name=&quot;home2map&quot;&gt;
+&lt;area shape=&quot;rect&quot; coords=&quot;2,4,312,156&quot; href=&quot;bathandbody.html&quot;&gt;
+&lt;/map&gt;
+&lt;/section&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;section &gt;
+&lt;table&gt;
+&lt;th rowspan=&quot;2&quot;&gt;&lt;h3 style=&quot;font-family:Lucida Handwriting ;&quot;&gt;Great deals on &lt;b&gt;LAKME &lt;/b&gt;check it
+out&lt;/h3&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&quot;https://m.media-amazon.com/images/W/WEBP_402378-
+T2/images/I/51y6KaN2o+S._AC_UL320_.jpg&quot;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&quot;https://m.media-amazon.com/images/W/WEBP_402378-
+T2/images/I/41sj3BrfvSL._AC_UL320_.jpg&quot;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&quot;https://m.media-amazon.com/images/W/WEBP_402378-
+T2/images/I/31HjA6+28nL._AC_UL320_.jpg&quot;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&quot;https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/51sYyCd1-
+rL._AC_UL320_.jpg&quot;&gt;&lt;/th&gt;
+&lt;th&gt;&lt;img src=&quot;https://m.media-amazon.com/images/W/WEBP_402378-
+T2/images/I/31YbjwqsoXL._AC_UL320_.jpg&quot;&gt;&lt;/th&gt;
+&lt;tr&gt;
+&lt;td&gt;LAKMÉ 9 To 5 Vitamin C+ Face Serum, For Nourished &amp; Bright Skin ₹500 (₹16.67/millilitre)&lt;del&gt; ₹599
+&lt;/del&gt;(17% off)&lt;/td&gt;
+&lt;td&gt;Lakme 9to5 Vitamin C facewash with microcrystalline beads for refreshed &amp; glowing skin 100g ₹194
+(₹1.94/count) &lt;del&gt;₹249 &lt;/del&gt;(22% off)&lt;/td&gt;
+&lt;td&gt;Lakme 9to5 Vit C+ Facial Foam for healthy glowing skin, 150 ml ₹324 (₹216/100 g)&lt;del&gt;₹499 &lt;/del&gt;(35%
+off)&lt;/td&gt;
+&lt;td&gt;Lakme Blush &amp; Glow Lemon Freshness Gel Face Wash with Lemon Extracts, 100 g ₹175 (₹175/100 g)
+&lt;del&gt;₹225 &lt;/del&gt;(22% off)&lt;/td&gt;
+&lt;td&gt;Lakme 9 to 5 CC Cream, 03 - Natural Coverage, SPF 30 ₹289.67 (₹289.67/count)&lt;del&gt; ₹349&lt;/del&gt;(17%
+off)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/section&gt;
+&lt;footer class=&quot;footer&quot;&gt;
+&lt;div class=&quot;container1&quot;&gt;
+&lt;table&gt;
+&lt;h4 align=&quot;center&quot;&gt;Quick Links&lt;/h4&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;footer-col&quot;&gt;
+&lt;h4&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Make up&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Skin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Hair&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Bath and Body&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Mom and Baby&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Perfumes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Ayurvedic&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footer-col&quot;&gt;
+&lt;h4&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Lakme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Nivea&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Himalaya&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Vaseline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Ponds&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Neutogena&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;MamaEarth&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Plum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footer-col&quot;&gt;
+&lt;h4&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Face cream&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Brushes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Lipstick&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Nail polish&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;serums&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Gels&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footer-col&quot;&gt;
+B-CARE products&lt;br&gt;
++91-877-2504888&lt;br&gt;
++91-916-0999977&lt;br&gt;
+&lt;div class=&quot;social-links&quot;&gt;
+&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt; &amp;nbsp;
+&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt; &amp;nbsp;
+&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt; &amp;nbsp;
+&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fab fa-linkedin-in&quot;&gt;&lt;/i&gt;&lt;/a&gt; &amp;nbsp;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/footer&gt;
+&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
