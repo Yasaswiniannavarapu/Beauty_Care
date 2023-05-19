@@ -1,0 +1,26 @@
+&lt;?php
+    if($_SERVER[&#39;REQUEST_METHOD&#39;]==&#39;POST&#39; &amp;&amp; isset($_POST[&#39;register&#39;]))
+    {
+        $conn = mysqli_connect(&#39;localhost&#39;,&#39;root&#39;,&#39;&#39;,&#39;miniproject&#39;) or die(&quot;Connection Failed&quot;);
+        if(isset($_POST[&#39;username&#39;]) &amp;&amp; isset($_POST[&#39;password&#39;]) &amp;&amp; isset($_POST[&#39;repassword&#39;]))
+        {
+            $username = $_POST[&#39;username&#39;];
+            $password = $_POST[&#39;password&#39;];
+            $repassword=$_POST[&#39;repassword&#39;];
+           
+            $sql = &quot;INSERT INTO `registrationtable` (`username`, `password`,&#39;repassword&#39;)  VALUES
+(&#39;$username&#39;,&#39;$password&#39;,&#39;$repassword&#39;)&quot;;
+            if(mysqli_query($conn,$sql))
+            {
+                header(&quot;Location:http://localhost/programs/loginform.html&quot;);
+            }
+            else
+            {
+                echo &quot;Error Occured&quot;;
+            }
+         
+           
+        }
+    }
+
+?&gt;
